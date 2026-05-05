@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of selector in CSS</title>
+    
+    <style>
+        /* <!-- ELEMENT selector --> */
+        /* div{
+            color: rgb(51, 2, 246);
+            background-color: rgb(237, 179, 179);
+        } */
+        /* CLASS SELECTOR */
+            .red
+            {
+                color: red;
+            }
+        /* ID SELECTOR */
+            #chinsaw
+            {
+                background-color: green;
+            }
+        /* CHILD SELECTOR */
+        /* div > p 
+        {
+            color: rgb(234, 231, 231);
+            background-color: red;
+        } */
+        /* GROUP SELECTORS */
+        div, p
+        {
+            
+            background-color: rgb(188, 187, 187);
+        }
+        /* UNIVERSAL SELECTOR */
+        *
+        {
+            margin: 0;
+            padding: 1;
+        }
+        /* PSEUDO SELECTOR */
+        /* visited matlab hamley tyo link ekchoti xoyesi athawa click garera visit garesi tesko color change hunxa according to the css inside a.visited. */
+        a:visited
+        {
+            color:rgb(255, 102, 0);
+            background-color: red;
+        }
+        /* jun link visit vaxaina tyo link aacording to a.link vitrako jasto dekhinxa color you can also try replacong facebook 3 with facebook4 becacause we alreadyu visiyted facebook 3 so it doesnot work for that or you can link whatever but the link you provide cannot be opened before*/
+        a:link
+        {
+            color: green;
+        }
+        /* jun link ma click garxam tyo active link ho ani tesma click garda according to a.active vitra ko code anusar dekhinxa */
+        a:active
+        {
+            color: green;
+            background-color: black;
+        }
+        /* hover garyo vaney tesma xuda purple color hunxa */
+        a:hover
+        {
+            background-color: purple;
+        }
+     </style>
+</head>
+<body>
+    <div class="red">Some types are:</div>
+    <a href="https://www.google.com">Visit Google</a>
+    <a href="https://www.facebook.com">Visit Facebook</a>
+    <div id="chinsaw">I will use id selector and i named my id as chinsaw
+        <P>I am para inside div</P>
+    </div>
+
+    <div>My name is Sachin kandel and i am currently pursuing my bachelor degree in computer engineering at Pokhara University</div>
+
+</body>
+</html>

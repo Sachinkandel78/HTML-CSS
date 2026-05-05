@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Varibles</title>
+    <style>
+        :root{
+            --color:rgb(236, 21, 193);
+            --seccolor:rgb(237, 192, 231);
+            --defpadding:53px;
+            --opacity:0.5
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            background-color: var(--color);
+            /* background-color: green; */
+            /* display: flex; */
+        
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpadding);
+            border: 2px solid var(--seccolor);
+            /* opacity: var(--opacity); */
+        }
+ul li:first-child{
+    --color1:rgb(195, 219, 150);
+    /* opacity: var(--opacity); */
+    background-color: var(--color1);
+    /* yo local variable vayo kina vanda yo only valid or use for li firsst child which cannnot be access by outside this */
+}
+        .container{
+            /* background-color: rgb(159, 219, 159); */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li> Home</li>
+            <li>About</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, laborum tempora inventore et maxime recusandae
+        tempore enim cumque earum obcaecati placeat doloremque voluptatem maiores, cupiditate sed quasi quis quod natus
+        explicabo aliquam, optio consequuntur. Assumenda inventore expedita optio repellendus sint eaque ipsa alias
+        numquam repellat!
+    </div>
+</body>
+
+</html>

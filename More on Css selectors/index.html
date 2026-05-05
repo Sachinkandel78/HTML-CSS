@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box:first-child{
+            background-color: rgb(235, 12, 251);
+        } 
+
+         .box:first-line{
+            color: yellow;
+      }  
+        
+         .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        [data-color="primary"]{
+            /* margin-top: 50px; */
+        /* padding: 50px;
+        }
+        .box:nth-child(even)
+        {
+            background-color: paleturquoise;
+        }  */
+        /* .box:nth-last-child(1) {
+            background-color: red;
+        } */
+
+        .boxes::after {
+            content: "Sigma course is just outstanding";
+            color: blue;
+        }
+
+        .boxes::before {
+            content: "Harry is good person";
+            color: red;
+        }
+
+        ::selection {
+            color: red;
+            background-color: aqua;
+        }
+
+        .box::first-letter {
+            color: rgb(12, 233, 122);
+            font-size: 43px;
+        }
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a box</div>
+        <div class="box">I am also a box</div>
+        <div class="box">Keep it simple I am also a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>

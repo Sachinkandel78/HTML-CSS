@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Nav bar and using global variables for styling</title>
+
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    :root{
+        --color:#0a01fae9;
+        --seccolor:rgb(201, 218, 226);
+        --defpadding:33px;
+        --margin:0px 35px;
+        --text-color:white;
+    }
+    body{
+        background-color: var(--seccolor);
+    }
+    .nav{
+        background-color: var(--color);
+    }
+    ul{
+        display: flex;
+        padding: var(--defpadding);
+        
+    }
+    ul li{
+        list-style: none;
+        margin: var(--margin);
+        font-size: 30px;
+        color:var(--text-color);
+        font-weight: bold;
+    }
+    ul li a{
+        color:var(--text-color);
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="https://www.sachin0010.com.np/">Home</a> </li>
+            <li><a href="">About</a> </li>
+            <li><a href="www.google.com">Contact</a> </li>
+           
+
+        </ul>
+    </div>
+</body>
+
+</html>

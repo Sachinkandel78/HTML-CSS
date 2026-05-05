@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Units in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid red;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            background-color: rgb(34, 205, 68);
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 60vh;
+            margin: 23px ;
+            font-size: 9px;
+            background-color: blanchedalmond;
+        }
+        .container p{
+            font-size: 1.5em;
+            /* border: 2px solid red;
+              width: 50%; */
+        }
+        .mycont
+        {
+            box-sizing: border-box;
+            border: 2px solid blueviolet;
+            font-size: 24px;
+            width: 100vmin;
+            margin: 23px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This is a box</div>
+    <div class="container"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur minima unde odio, asperiores necessitatibus! Quidem ut, quam voluptatibus minus optio praesentium suscipit iure blanditiis aut veniam. Suscipit, nulla magni?</p>
+    </div>
+     <div class="mycont">I am a another container</div>
+</body>
+</html>
